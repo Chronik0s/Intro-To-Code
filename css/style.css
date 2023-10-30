@@ -1,0 +1,144 @@
+/*All rules for Space Tourism*/
+/* Last rule wins // most specific rule wins*/
+
+/*Normalizing rules*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+
+    background: var(--blue---Med, #2a315f);
+    color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #595c7d;
+
+}
+
+.feature {
+    background-image: url('../images/space.jpg');
+    background-position: right;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 300px 200px;
+    grid-gap: 50px;
+}
+
+.gold-bkg {
+    background: #f3d9b5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: end;
+}
+
+/*Typography*/
+h3 {
+    color: var(--blue---Med, #2a315e);
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    background: #ffb859;
+    padding: 5px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    transition: background-color, color .5s;
+}
+
+.button-gold {
+    color: #ffb859;
+}
+
+.button-gold:hover {
+    background: #f3d9b5;
+    color: black;
+}
+
+.button-blue {
+    background-color: #ffb859;
+    color: #595c7d;
+    padding: 5px 20px;
+    border-radius: 15px;
+    display: inline-block;
+
+}
+
+.button-blue:hover {
+    background: #595c7d;
+    color: white;
+    transition: background-color, color .5s;
+
+}
+
+.pg-padding {
+    padding: 30px 50px;
+}
+
+.other-trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+
+}
+
+.pluto {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.plutwo {
+    grid-column: 2;
+    grid-row: 2;
+}
+.primary-nav ul{
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+justify-content: space-evenly;
+flex: end ;
+grid-gap: 20px;
+}
+.primary-nav ul a {
+color: white;
+text-decoration: none;
+display: inline-block;
+padding: 10px 0px;
+border-bottom: 1px dotted rgba(0, 0, 0, 0);   
+transition: 0.5s;
+}
+.primary-nav ul a:hover {
+color: #ffb859;
+}
+.primary-nav ul a.active{
+color: #ffb859;
+}
